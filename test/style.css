@@ -1,0 +1,410 @@
+/*                                                     ESTILO DEL CUERPO HTML                                                    */
+
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url('../images/imageBlur.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*                                                   Fin - ESTILO DE CUERPO HTML                                                 */
+
+
+
+/*                                                      HEADER & MENU PRINCIPAL                                                 */
+
+header 
+{
+    display: flex;
+    position: fixed;
+    top: 3%;
+    z-index: 1;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    padding: 1rem, 2rem;
+    
+    padding-bottom: 1%;
+    transition: top 0.3s ease;
+
+    width: 100%;
+}
+
+.header-hidden 
+{
+    top: -100px;
+}
+
+.menu-principal-hidden
+{
+    top: -100px;
+    padding-top: -20%;
+}
+
+#h1
+{
+    font-size: 68px;
+    font-display: bold;
+    
+    margin-top: 5%;
+
+    font-family: "Bomber Urban", sans-serif;
+    letter-spacing: 2px;
+    color: white;
+
+
+    -webkit-text-stroke: 2px black;
+
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+         
+    background-color: transparent;
+}
+
+.lineado
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 15%;
+    margin-top: 15%;
+}
+
+.landing-lineado
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+}
+
+nav
+{
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-bar 
+{
+    position: fixed;
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 170px;
+
+    transition: top 0.3s ease;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.nav-bar-up {
+
+    background-color: black;
+    top: -100px;
+
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,1.0);
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+}
+
+.nav-bar-down {
+    top: 0;
+}
+
+.menu-principal
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    width: 300px;   
+
+    background-color: rgba(0,0,0,0.5);
+
+    border: 2px;
+    border-radius: 50px;
+
+    margin-bottom: 15%;
+    margin-top: 15%;
+
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,1.0));
+}
+
+.login
+{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    min-width: 120px;
+    height: 50px;
+
+    z-index: 1;
+
+    margin-left: 85%;
+
+
+    background-color: rgba(0,0,0,0.5);
+
+    border-radius: 30px;
+
+    box-shadow: 0px 0px 15px 0px;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,1.0));
+}
+
+
+.login a
+{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop
+{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    min-width: 120px;
+    height: 50px;
+
+    z-index: 1;
+
+    margin-left: -85%;
+
+    background-color: rgba(0,0,0,0.5);
+
+    border-radius: 30px;
+
+    box-shadow: 0px 0px 15px 0px;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,1.0));
+}
+
+.shop a
+{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: aqua;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;    
+}
+
+.btn-personalizado
+{
+    background-color: transparent;
+    color: aliceblue;
+    font-family: "Bomber Urban", sans-serif;
+    font-size: large;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: transparent;
+    transition: padding 0.3s ease;
+}
+
+.btn-personalizado:hover
+{
+    color: aqua;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*                                                    Fin - HEADER & MENU PRINCIPAL                                              */
+
+
+
+/*                                                         CATALOGO PRINCIPAL                                                    */
+
+.catalogo
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    margin: 5%;
+
+    width: 100%;
+    height: 350px;
+    background-color: rgba(0,0,0,0.5);;
+    border-radius: 30px;
+
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,1.0));
+}
+
+.item
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+
+    height: 350px;
+
+}
+
+.item a
+{
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+}
+
+p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    font-family: "Bomber Urban", sans-serif;
+    font-size: large;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+img
+{
+    width: 200px;
+    height: auto;
+}
+/*                                                      Fin - CATALOGO PRINCIPAL                                                 */
+
+
+/*                                                              ACCESO                                                           */
+
+.form-acceso
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 450px;
+
+    border-radius: 50px;
+
+    
+
+    background-color: aliceblue;
+}
+
+/*                                                           Fin - ACCESO                                                        */
+
+
+
+/*                                                      CATALOGO VENTAS                                                          */
+
+.catalogo-ventas
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 350px;
+}
+
+#span-prev
+{
+    display: flex;
+    margin-left: -80%;
+}
+
+
+#span-next
+{
+    display: flex;
+    margin-right: -80%;
+}
+/*                                                    Fin - CATALOGO VENTAS                                                      */
+
+
+
+/*                                                             CONTACTO                                                          */
+footer
+{
+    position: static;
+    bottom: 0;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 5px;
+
+    width: 100%;
+    height: 40px;
+
+    background-color: rgba(0,0,0,0.5);
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,1.0));
+}
+
+cite
+{
+    color: aliceblue;
+    font-family: "Billy", sans-serif;
+    font-size: 12px;
+}
+
+footer p
+{
+    color: aliceblue;
+}
+
+.slogan
+{
+    position: static;
+    bottom: 0;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+
+    width: 100%;
+    height: 70px;
+
+    background-color: rgba(0,0,0,0.5);
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    box-shadow: 0px 0px 15px 0px;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,1.0));
+}
+
+.slogan cite
+{
+    color: aliceblue;
+    font-family: "Billy", sans-serif;
+    font-size: 16px;
+}
+
+b
+{
+    color: aqua;
+    text-decoration: underline;
+}
+/*                                                           Fin - CONTACTO                                                      */

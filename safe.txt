@@ -1,0 +1,24 @@
+ <?php foreach($resultado as $row) { ?>
+
+                <?php 
+                
+                    $id = $row['id'];
+                    $imagen = "../images/productos/" . $id . "/camiseta.png";
+                
+                    if (!file_exists($imagen))
+                    {
+                        $images = "../images/productos/sinfoto.png";
+                    }
+
+                ?>
+
+                <div class="item">
+                    <a href="">
+                        <img src="<?php echo $imagen; ?>">
+                        <p>Remera: <br><?php echo $row['nombre_prenda']; ?>
+                        <br>Talle: <?php echo $row['talle_prenda']; ?>
+                        <br>$  <?php echo number_format($row['precio_prenda']); ?></p>
+                    </a>
+                </div>
+
+            <?php } ?>
